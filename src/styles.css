@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  /* text-align: center;  doesn't work */
+  margin-inline-end: 40%;
+}
+
+img {
+  padding-bottom: 5%;
+}
