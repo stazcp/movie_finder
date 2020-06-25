@@ -1,12 +1,15 @@
 body {
   font-family: sans-serif;
+  background-color: seashell;
 }
 
-h1 {
+h4 {
   /* text-align: center;  doesn't work */
   margin-inline-end: 40%;
+  color: white;
 }
 
 img {
-  padding-bottom: 5%;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
