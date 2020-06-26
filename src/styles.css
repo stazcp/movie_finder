@@ -3,13 +3,11 @@ body {
   background-color: seashell;
 }
 
-h4 {
-  /* text-align: center;  doesn't work */
-  margin-inline-end: 40%;
-  color: white;
-}
-
 img {
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+h4 {
+  margin: 1rem 0 0 1rem;
 }

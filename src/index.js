@@ -62,7 +62,7 @@ searchForm.addEventListener("submit", event => {
   runSearch(searchValue);
 });
 
-const onClickMovie = movie => {
+const onMouseOverMovie = movie => {
   console.log(movie.title);
 };
 
@@ -73,7 +73,9 @@ const displayPosters = data => {
     let poster = `${baseImageURL}${poster_size}${movie.poster_path}`;
     let moviePoster = document.createElement("img");
     moviePoster.src = poster;
-    moviePoster.onclick = () => onClickMovie(movie); //wrapping the func to not execute without click
+    moviePoster.onmouseover = () => onMouseOverMovie(movie); //wrapping the func to not execute without click
+    moviePoster.toggle = "popover";
+
     document.getElementById("output").appendChild(moviePoster);
     return null;
   });
