@@ -36,13 +36,17 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Dropdown
+              Categories
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div
+              id="categories"
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdown"
+            >
+              <a id="popular" class="dropdown-item" href="#">Popular Movies</a>
+              <a id="now_playing" class="dropdown-item" href="#">Now Playing</a>
+              <a id="top_rated" class="dropdown-item" href="#">Top Rated</a>
+              <a id="upcoming" class="dropdown-item" href="#">Upcoming</a>
             </div>
           </li>
         </ul>
@@ -62,9 +66,53 @@
     </nav>
 
     <h4>Popular Movies</h4>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieTitle">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="output" class="d-flex flex-wrap justify-content-around"></div>
 
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="prevPageBtn">
+          <
+        </button>
+        <span
+          >Page <span id="currentPage"></span> of <span id="nOfPages"></span
+        ></span>
+        <button class="btn btn-outline-success my-2 my-sm-0" id="nextPageBtn">
+          >
+        </button>
+      </div>
+    </footer>
     <script src="src/index.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

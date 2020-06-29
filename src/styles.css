@@ -11,3 +11,13 @@ img {
 h4 {
   margin: 1rem 0 0 1rem;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+}
