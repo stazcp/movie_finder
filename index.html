@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Movie Finder</title>
+    <title>The Movie Finder</title>
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
@@ -9,10 +9,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Movie Finder</a>
+      <a class="navbar-brand" href="/">The Movie Finder</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -100,15 +103,27 @@
 
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <button class="btn btn-outline-success my-2 my-sm-0" id="prevPageBtn">
-          <
+        <button
+          class="btn btn-outline-success my-2 my-sm-0 previous"
+          id="prevPageBtn"
+        >
+          &larr;
         </button>
-        <span
-          >Page <span id="currentPage"></span> of <span id="nOfPages"></span
-        ></span>
+        <div class="pageText">
+          <span>Page</span>
+          <span id="currentPage"></span>
+          <span>of</span>
+          <span id="nOfPages"></span>
+        </div>
         <button class="btn btn-outline-success my-2 my-sm-0" id="nextPageBtn">
-          >
+          &rarr;
         </button>
+        <form id="getPageNo">
+          <input type="number" id="selectPage" name="selectPage" size="3" />
+          <button id="goToPage" type="submit" class="btn btn-primary">
+            Go
+          </button>
+        </form>
       </div>
     </footer>
     <script src="src/index.js"></script>

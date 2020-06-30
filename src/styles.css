@@ -9,15 +9,46 @@ img {
 }
 
 h4 {
+  font-family: "Notable", sans-serif;
   margin: 1rem 0 0 1rem;
 }
 
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
+} */
+
+/* keep footer always at bottom, needs fixing at certain occasions 
+flex-box space-between, or min height on movie container
+*/
+footer {
+  bottom: 0;
+  background-color: #343a40;
+  color: white;
 }
 
-.footer {
+.footer .container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer button {
+  margin-inline-end: 10px;
+  margin-bottom: 2px;
+  height: 35px;
+}
+
+#selectPage {
+  height: 35px;
+}
+
+.pageText {
+  margin-inline-end: 10px;
+  padding-top: 5px;
+}
+
+#selectPage {
+  width: 60px;
 }
