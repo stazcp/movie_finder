@@ -1,2 +1,3 @@
 # movie_finder
-Created with CodeSandbox
+Using Movie DB with Vanilla JS in CodeSandbox
+for testing purposes
